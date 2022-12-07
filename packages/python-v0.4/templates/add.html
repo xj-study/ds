@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/common.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <form action="{{ action }}" method="post">
+      <div class="form">
+        <div class="form-item">ID：<input type="text" name="id" value="{{ data['id'] }}" /></div>
+        <div class="form-item">姓名：<input type="text" name="name" value="{{ data['name'] }}" /></div>
+        <div class="form-item">英语成绩：<input type="text" name="english" value="{{ data['english'] }}" /></div>
+        <div class="form-item">数学成绩：<input type="text" name="math" value="{{ data['math'] }}" /></div>
+        <div class="form-item">Java成绩：<input type="text" name="java" value="{{ data['java'] }}" /></div>
+        <div class="form-item">Python成绩：<input type="text" name="python" value="{{ data['python'] }}" /></div>
+        <button type="submit">保存</button>
+        <a href="/">取消</a>
+      </div>
+    </form>
+    {% include 'footer.html' %}
+  </body>
+</html>

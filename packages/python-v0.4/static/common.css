@@ -1,0 +1,40 @@
+.menu {
+  margin: 1rem 0;
+}
+.list {
+  border-top: 1px solid #ddd;
+}
+.list-line {
+  display: flex;
+}
+.list-cell {
+  flex: 1;
+  padding: 4px 8px;
+}
+a.list-cell {
+  text-decoration: none;
+}
+.s-english .i-english::after,
+.s-math .i-math::after,
+.s-java .i-java::after,
+.s-python .i-python::after {
+  content: "^";
+  color: red;
+}
+.list-header {
+  font-weight: 500;
+}
+.list-header .list-cell {
+  background-color: #eee;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: gray;
+  text-align: center;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "esbuild-v0.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"esbuild hello.ts --bundle --outfile=index-browser.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

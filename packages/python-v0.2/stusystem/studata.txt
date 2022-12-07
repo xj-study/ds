@@ -1,0 +1,2 @@
+{"id": "1002", "name": "\u674e\u56db", "english": 111, "math": 1, "java": 1, "python": 1, "total": 114}
+{"id": "1001", "name": "\u5f20\u4e09", "english": 100, "math": 89, "java": 80, "python": 19, "total": 288}

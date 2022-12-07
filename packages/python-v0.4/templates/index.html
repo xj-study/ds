@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学生信息管理系统</title>
+    <link rel="stylesheet" href="/static/common.css" />
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <div class="menu">
+      <form action="/" method="post">
+        <div class="search-list">
+          ID：<input type="text" name="id" value="{{ id }}" /> 姓名：<input
+            type="text"
+            name="name"
+            value="{{ name }}"
+          />
+          状态：<select name="status">
+            <option value="">全部</option>
+            <option value="1">启用</option>
+            <option value="0">已删除</option>
+          </select>
+          <button type="submit">查询</button>
+          <a href="/">清空</a>
+          <a href="/add">新增</a>
+        </div>
+      </form>
+    </div>
+    <div class="list">
+      <div class="list-line list-header s-{{sort}}">
+        <div class="list-cell">ID</div>
+        <div class="list-cell">姓名</div>
+        <a class="list-cell i-english" href="/?s=english">英语成绩</a>
+        <a class="list-cell i-math" href="/?s=math">数学成绩</a>
+        <a class="list-cell i-java" href="/?s=java">Java成绩</a>
+        <a class="list-cell i-python" href="/?s=python">Python成绩</a>
+        <div class="list-cell">操作</div>
+      </div>
+      {% if list | length %} {% for item in list %}
+      <div class="list-line list-item">
+        {% for val in item %} {% if loop.last %}
+        <div class="list-cell">
+          {% if val %}
+          <a href="/status/{{item[0]}}/0">删除</a>
+          {% else %}
+          <a href="/status/{{item[0]}}/1">启用</a>
+          {% endif %}
+          <a href="/modify/{{item[0]}}">编辑</a>
+        </div>
+        {% else %}
+        <div class="list-cell">{{ val }}</div>
+        {% endif %} {% endfor %}
+      </div>
+      {% endfor %} {% else %}
+      <div>数据为空</div>
+      {% endif %}
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
