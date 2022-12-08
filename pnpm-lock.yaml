@@ -10,6 +10,27 @@ importers:
       esbuild: 0.15.18
       rollup: 3.6.0
 
+  packages/esbuild-v0.1:
+    specifiers: {}
+
+  packages/p1:
+    specifiers:
+      '@demo/p2': workspace:*
+    dependencies:
+      '@demo/p2': link:../p2
+
+  packages/p2:
+    specifiers:
+      '@demo/p1': workspace:*
+    dependencies:
+      '@demo/p1': link:../p1
+
+  packages/rollup-v0.1:
+    specifiers:
+      rollup: ^3.6.0
+    devDependencies:
+      rollup: 3.6.0
+
 packages:
 
   /@esbuild/android-arm/0.15.18:

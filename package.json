@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter=\"./packages/**\" --parallel dev"
+    "dev": "pnpm --filter=\"./packages/**\" --parallel dev",
+    "dev:cjs": "pnpm --filter=\"./packages/**\" --parallel dev:cjs"
   },
   "keywords": [],
   "author": "",

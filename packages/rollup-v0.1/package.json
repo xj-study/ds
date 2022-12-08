@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "rollup main.js --file bundle.js --format iife"
+    "dev": "rollup main.js --file bundle-iife.js --format iife",
+    "dev:cjs": "rollup main.js --file bundle-cjs.js --format cjs"
   },
   "keywords": [],
   "author": "",
