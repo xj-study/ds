@@ -1,16 +1,15 @@
 {
-  "name": "sd",
+  "name": "rollup-v0.1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "pnpm --filter=\"./packages/**\" --parallel dev"
+    "dev": "rollup main.js --file bundle.js --format iife"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.15.13",
     "rollup": "^3.6.0"
   }
 }

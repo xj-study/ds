@@ -1,0 +1,15 @@
+{
+  "name": "@demo/p2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"esbuild index.js --bundle --outfile=index-browser.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@demo/p1": "workspace:*"
+  }
+}
