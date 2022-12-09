@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm --filter=\"./packages/**\" --parallel dev",
     "dev:cjs": "pnpm --filter=\"./packages/**\" --parallel dev:cjs",
-    "dev:umd": "pnpm --filter=\"./packages/**\" --parallel dev:umd"
+    "dev:umd": "pnpm --filter=\"./packages/**\" --parallel dev:umd",
+    "build": "pnpm --filter=\"./packages/**\" --parallel build"
   },
   "keywords": [],
   "author": "",
