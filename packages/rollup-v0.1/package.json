@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "rollup main.js --file bundle-iife.js --format iife",
-    "dev:cjs": "rollup main.js --file bundle-cjs.js --format cjs"
+    "dev:cjs": "rollup main.js --file bundle-cjs.js --format cjs",
+    "dev:umd": "rollup main.js --file bundle-umd.js --format umd --name 'myBundle'"
   },
   "keywords": [],
   "author": "",

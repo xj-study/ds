@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter=\"./packages/**\" --parallel dev",
-    "dev:cjs": "pnpm --filter=\"./packages/**\" --parallel dev:cjs"
+    "dev:cjs": "pnpm --filter=\"./packages/**\" --parallel dev:cjs",
+    "dev:umd": "pnpm --filter=\"./packages/**\" --parallel dev:umd"
   },
   "keywords": [],
   "author": "",
